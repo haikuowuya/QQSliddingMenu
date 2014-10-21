@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:drakeet="http://schemas.android.com/apk/res-auto"
+    >
+
+    <me.drakeet.qqsliddingmenu.QQSliddingMenu
+        android:id="@+id/qqsm"
+        drakeet:rigthtPadding="160dp"
+        android:background="@drawable/img_frame_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/left_menu"/>
+
+            <LinearLayout
+                android:background="@drawable/qq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="toggleMenu"
+                    android:text="切换菜单"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </me.drakeet.qqsliddingmenu.QQSliddingMenu>
+
+</RelativeLayout>
